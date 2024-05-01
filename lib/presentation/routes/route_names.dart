@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:socialmediaapp/presentation/screen/splash/splash_screen.dart';
+import 'package:socialmediaapp/presentation/screen/createandlogin/create_and_login_screen.dart';
 
 class RouteNames {
   static const String splashScreen = '/splashScreen';
@@ -8,7 +8,7 @@ class RouteNames {
     switch (settings.name) {
       case RouteNames.splashScreen:
         return MaterialPageRoute(
-            settings: settings, builder: (_) => SplashScreen());
+            settings: settings, builder: (_) => const CreateAndLoginScreen());
 
       default:
         return MaterialPageRoute(
